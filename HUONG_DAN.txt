@@ -1,0 +1,67 @@
+AHA TALENT 2026 — BẢN KHÔNG CẦN UPLOAD FOLDER
+
+Repository chỉ cần 3 file ở ngoài cùng:
+
+index.html
+backend.js
+vercel.json
+
+BƯỚC 1 — APPS SCRIPT
+
+1. Trong Google Sheet, mở Tiện ích mở rộng → Apps Script.
+2. Dùng Code.gs đã được cung cấp ở package trước.
+3. Chạy setupAhaTalentBackend.
+4. Deploy Web App:
+   - Execute as: Me
+   - Who has access: Anyone
+5. Copy URL kết thúc bằng /exec.
+
+BƯỚC 2 — BACKEND.JS
+
+1. Mở backend.js.
+2. Tìm:
+
+const APPS_SCRIPT_URL = "PASTE_APPS_SCRIPT_EXEC_URL_HERE";
+
+3. Thay bằng URL /exec thật.
+4. Save.
+
+BƯỚC 3 — GITHUB
+
+1. Xóa folder api cũ nếu đang có.
+2. Xóa vercel.json cũ.
+3. Add file → Upload files.
+4. Chọn cùng lúc:
+   - index.html
+   - backend.js
+   - vercel.json
+5. Commit changes.
+
+Cấu trúc đúng:
+
+REPOSITORY
+├── index.html
+├── backend.js
+└── vercel.json
+
+BƯỚC 4 — VERCEL
+
+1. Chờ Vercel deploy lại.
+2. Framework Preset: Other.
+3. Build Command: để trống.
+4. Output Directory: để trống.
+
+BƯỚC 5 — TEST
+
+Mở:
+
+https://DOMAIN-CUA-BAN.vercel.app/api/health
+
+Kết quả đúng:
+
+{
+  "ok": true,
+  "message": "Vercel đã kết nối thành công với Google Apps Script."
+}
+
+Sau đó quay lại trang chủ và gửi một đăng ký thử.
