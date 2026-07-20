@@ -1,19 +1,10 @@
-AHA TALENT 2026 — CLEAN VERCEL DEPLOY
+AHA TALENT 2026 — READY TO DEPLOY
 
-Chỉ upload 2 file ở cấp ngoài cùng của repository:
-1. index.html
-2. vercel.json
+Endpoint Formspree đã được gắn:
+https://formspree.io/f/1D-kqGPIj6N2_xv0b0PxmYU8dOe2P8wGull7dBZX3yX4
 
-Trước khi upload:
-- Mở index.html.
-- Tìm YOUR_FORM_ID.
-- Thay bằng Formspree Form ID thật.
+Upload 2 file lên GitHub:
+- index.html
+- vercel.json
 
-Quan trọng:
-- Xóa vercel.json cũ trước khi upload file mới.
-- Không để thư mục api.
-- Không để package.json.
-- Không upload nguyên thư mục cha; index.html phải nằm ngay cấp ngoài cùng của repository.
-
-Sau khi commit:
-Vercel → Deployments → Redeploy.
+Sau đó Commit changes và chờ Vercel tự deploy lại.
