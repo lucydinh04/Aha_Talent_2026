@@ -1,0 +1,97 @@
+AHA TALENT 2026 — VERCEL + APPS SCRIPT + GOOGLE SHEET
+Không cần Google Cloud Console.
+
+GOOGLE SHEET ĐÍCH
+https://docs.google.com/spreadsheets/d/1D-kqGPIj6N2_xv0b0PxmYU8dOe2P8wGull7dBZX3yX4/edit?gid=1096028765
+
+====================
+PHẦN A — GOOGLE SHEET
+====================
+
+1. Mở Google Sheet ở link trên.
+2. Chọn Tiện ích mở rộng → Apps Script.
+3. Mở file Code.gs.
+4. Xóa toàn bộ code cũ.
+5. Copy toàn bộ nội dung file Code.gs trong package này vào.
+6. Nhấn Save.
+
+7. Trên thanh chọn hàm, chọn:
+   setupAhaTalentBackend
+
+8. Nhấn Run.
+9. Cấp quyền cho script khi Google yêu cầu.
+10. Quay lại Sheet và kiểm tra tab Thành viên đã được tạo.
+
+=======================
+PHẦN B — DEPLOY BACKEND
+=======================
+
+1. Trong Apps Script chọn Deploy → New deployment.
+2. Select type → Web app.
+3. Execute as: Me.
+4. Who has access: Anyone
+   hoặc Anyone, even anonymous nếu tài khoản hiển thị lựa chọn này.
+5. Nhấn Deploy.
+6. Copy Web App URL kết thúc bằng /exec.
+
+Lưu ý:
+- Không dùng URL /dev.
+- Người tham gia không mở URL Apps Script.
+- Apps Script chỉ là backend ẩn để Vercel ghi dữ liệu.
+
+=====================
+PHẦN C — GẮN URL VÀO
+=====================
+
+1. Mở file api/submit.js.
+2. Tìm:
+   const APPS_SCRIPT_URL = "PASTE_APPS_SCRIPT_EXEC_URL_HERE";
+
+3. Thay bằng URL /exec vừa copy, ví dụ:
+   const APPS_SCRIPT_URL = "https://script.google.com/macros/s/ABC123/exec";
+
+4. Save file.
+
+================
+PHẦN D — GITHUB
+================
+
+Upload đúng cấu trúc:
+
+index.html
+vercel.json
+api/
+  submit.js
+
+Không xóa thư mục api.
+Không dùng vercel.json cũ có mục functions trỏ tới file không tồn tại.
+
+================
+PHẦN E — VERCEL
+================
+
+1. Commit changes trên GitHub.
+2. Vercel sẽ tự deploy.
+3. Framework Preset: Other.
+4. Build Command: để trống.
+5. Output Directory: để trống.
+
+================
+PHẦN F — TEST
+================
+
+1. Mở link Production của Vercel.
+2. Gửi một đăng ký thử.
+3. Kiểm tra tab Google Sheet có gid=1096028765.
+4. Kiểm tra tab Thành viên.
+5. Nếu thành công, xóa dữ liệu test.
+
+Nếu Vercel báo chưa cấu hình Apps Script URL:
+- Kiểm tra api/submit.js đã dùng URL kết thúc /exec.
+- Commit lại GitHub.
+- Redeploy Vercel.
+
+Nếu Apps Script trả lỗi quyền:
+- Deploy lại Web app.
+- Execute as: Me.
+- Who has access: Anyone.
