@@ -3,7 +3,7 @@
  *
  * Sau khi deploy Apps Script, thay URL bên dưới bằng link kết thúc /exec.
  */
-const APPS_SCRIPT_URL = "PASTE_APPS_SCRIPT_EXEC_URL_HERE";
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycby8k1fYm_1xHnmnr7ecMOmhGoi1na64wS48lvdh1gj-3vTmGExlRf081K5TwoapPUzkDg/exec";
 
 module.exports = async function handler(req, res) {
   res.setHeader("Content-Type", "application/json; charset=utf-8");
