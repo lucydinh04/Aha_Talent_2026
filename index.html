@@ -2364,7 +2364,7 @@
     <footer>Aha Got Talent 2026 • Sinh nhật Ahamove 11 tuổi<br>11 năm chuyển mình — Chuyển mình bứt phá</footer>
   </main>
 
-  <div class="modal" id="successModal" role="dialog" aria-modal="true"><div class="modal-box"><div class="modal-icon">✓</div><h3>Đăng ký thành công</h3><p id="modalMessage">Ban Tổ chức sẽ liên hệ với người đại diện qua Telegram sau khi hoàn tất sơ tuyển.</p><button type="button" class="btn btn-primary" id="closeModal">Hoàn tất</button></div></div>
+  <div class="modal" id="successModal" role="dialog" aria-modal="true"><div class="modal-box"><div class="modal-icon">✓</div><h3>Đăng ký thành công</h3><p id="modalMessage">Ban Tổ chức sẽ liên hệ với người đại diện qua Telegram sau khi kết thúc đợt đăng ký.</p><button type="button" class="btn btn-primary" id="closeModal">Hoàn tất</button></div></div>
 
   <script>
     const SUBMIT_ENDPOINT = "/api/submit";
@@ -2921,8 +2921,8 @@
 
         const registrationId = result.registrationId || "";
         modalMessage.textContent = registrationId
-          ? `Đăng ký đã được ghi nhận với mã ${registrationId}. Ban Tổ chức sẽ liên hệ với người đại diện qua Telegram sau khi hoàn tất sơ tuyển.`
-          : "Đăng ký đã được ghi nhận. Ban Tổ chức sẽ liên hệ với người đại diện qua Telegram sau khi hoàn tất sơ tuyển.";
+          ? `Đăng ký đã được ghi nhận với mã ${registrationId}. Ban Tổ chức sẽ liên hệ với người đại diện qua Telegram sau khi kết thúc đợt đăng ký.`
+          : "Đăng ký đã được ghi nhận. Ban Tổ chức sẽ liên hệ với người đại diện qua Telegram sau khi kết thúc đợt đăng ký.";
 
         localStorage.removeItem(DRAFT_KEY);
         modal.classList.add("show");
