@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#050914" />
   <title>Aha Got Talent 2026 | Chuyển mình bứt phá</title>
   <style>
@@ -1882,6 +1882,1000 @@
       .member-row { grid-template-columns:1fr; }
       .remove-btn { width:100%; }
     }
+
+    /* =========================================================
+       MOBILE EXPERIENCE — AHA GOT TALENT 2026
+       ========================================================= */
+    @media (max-width: 760px) {
+      html {
+        scroll-padding-top: 10px;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        background:
+          radial-gradient(circle at 0% 2%, rgba(255,100,31,.13), transparent 24%),
+          radial-gradient(circle at 100% 5%, rgba(78,227,255,.11), transparent 26%),
+          linear-gradient(180deg, #03060d 0%, #050914 42%, #050b16 100%);
+      }
+
+      body::before {
+        opacity: .42;
+      }
+
+      button,
+      input,
+      select,
+      textarea,
+      .choice label,
+      .rail-item,
+      .cta {
+        touch-action: manipulation;
+      }
+
+      .page {
+        width: calc(100% - 12px);
+        padding:
+          max(6px, env(safe-area-inset-top))
+          0
+          calc(34px + env(safe-area-inset-bottom));
+      }
+
+      .topbar {
+        gap: 8px;
+        margin-bottom: 8px;
+        padding: 0 2px;
+      }
+
+      .brand {
+        gap: 8px;
+      }
+
+      .brand-logo-wrap {
+        width: 100%;
+        gap: 9px;
+        padding: 8px 10px;
+        border-radius: 14px;
+        flex-wrap: nowrap;
+      }
+
+      .brand-logo-img {
+        width: 116px;
+        max-width: 45%;
+      }
+
+      .campaign-logo-chip {
+        min-width: 78px;
+        margin-left: auto;
+        padding: 5px 7px;
+        border-radius: 11px;
+      }
+
+      .campaign-logo-chip img {
+        width: 66px;
+      }
+
+      .program-kv {
+        margin-bottom: 10px;
+        border-radius: 14px;
+        box-shadow: 0 14px 38px rgba(0,0,0,.3);
+      }
+
+      .program-kv img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+      }
+
+      .hero {
+        gap: 16px;
+        min-height: 0;
+        padding: 20px 15px 16px;
+        border-radius: 20px;
+      }
+
+      .hero::before {
+        width: 310px;
+        height: 310px;
+        right: -190px;
+        top: -170px;
+      }
+
+      .event-tag {
+        max-width: 100%;
+        gap: 7px;
+        padding: 7px 9px;
+        font-size: 9px;
+        line-height: 1.35;
+        letter-spacing: .07em;
+      }
+
+      .event-tag svg {
+        width: 13px;
+        height: 13px;
+        flex: 0 0 auto;
+      }
+
+      .hero h1 {
+        margin: 17px 0 14px;
+        line-height: 1;
+      }
+
+      .hero-title-3d {
+        width: 100%;
+        font-size: clamp(20px, 7.25vw, 30px);
+        letter-spacing: -.068em;
+        transform: none;
+        -webkit-text-stroke: .65px rgba(255,255,255,.7);
+        text-shadow:
+          1px 1px 0 #76e6f7,
+          2px 2px 0 #21748f,
+          3px 4px 0 rgba(1,12,27,.82),
+          0 0 16px rgba(78,227,255,.25);
+        filter: none;
+      }
+
+      .hero-title-3d::after {
+        height: 22%;
+        opacity: .22;
+        filter: blur(5px);
+      }
+
+      .hero-tagline {
+        margin-top: 11px;
+        font-size: 13px;
+        line-height: 1.25;
+        letter-spacing: .065em;
+      }
+
+      .hero-lead {
+        font-size: 15px;
+        line-height: 1.62;
+      }
+
+      .hero-context {
+        margin-top: 16px;
+        padding: 13px 13px;
+        border-radius: 0 11px 11px 0;
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .hero-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 9px;
+        margin-top: 18px;
+      }
+
+      .cta {
+        width: 100%;
+        min-height: 51px;
+        padding: 0 14px;
+        border-radius: 12px;
+        font-size: 14px;
+      }
+
+      .hero-visual {
+        min-height: 284px;
+        margin-top: -2px;
+      }
+
+      .hero-visual svg {
+        max-height: 300px;
+        filter: drop-shadow(0 20px 28px rgba(0,0,0,.34));
+      }
+
+      .orbit {
+        animation-duration: 28s;
+      }
+
+      .float-card {
+        min-width: 112px;
+        padding: 8px 9px;
+        border-radius: 11px;
+        animation: none !important;
+        backdrop-filter: blur(9px);
+      }
+
+      .float-card small {
+        font-size: 8px;
+        letter-spacing: .08em;
+      }
+
+      .float-card strong {
+        margin-top: 3px;
+        font-size: 11px;
+      }
+
+      .float-card.one {
+        top: 4px;
+        left: 4px;
+        right: auto;
+      }
+
+      .float-card.two {
+        top: 76px;
+        right: 2px;
+      }
+
+      .float-card.three {
+        left: 4px;
+        bottom: 4px;
+      }
+
+      .signal-bars {
+        height: 14px;
+        margin-top: 5px;
+      }
+
+      .signal-bars i {
+        width: 3px;
+      }
+
+      .event-strip {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        gap: 8px;
+        margin-top: 10px;
+      }
+
+      .metric {
+        min-height: 102px;
+        padding: 13px;
+        border-radius: 14px;
+      }
+
+      .metric svg {
+        width: 19px;
+        height: 19px;
+        margin-bottom: 7px;
+      }
+
+      .metric strong {
+        font-size: 13px;
+        line-height: 1.3;
+      }
+
+      .metric span {
+        margin-top: 4px;
+        font-size: 10px;
+        line-height: 1.38;
+      }
+
+      .content-grid {
+        gap: 13px;
+        margin-top: 13px;
+      }
+
+      .main-column,
+      .side-column {
+        gap: 13px;
+      }
+
+      .panel {
+        border-radius: 18px;
+      }
+
+      .panel-inner {
+        padding: 18px 15px;
+      }
+
+      .section-kicker {
+        margin-bottom: 6px;
+        font-size: 10px;
+        letter-spacing: .11em;
+      }
+
+      .section-title {
+        font-size: 22px;
+        line-height: 1.16;
+      }
+
+      .section-desc {
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: 1.58;
+      }
+
+      .mission-flow {
+        gap: 8px;
+        margin-top: 16px;
+      }
+
+      .mission {
+        min-height: 0;
+        display: grid;
+        grid-template-columns: 42px minmax(0,1fr);
+        column-gap: 11px;
+        row-gap: 3px;
+        align-items: center;
+        padding: 13px;
+        border-radius: 14px;
+      }
+
+      .mission-icon {
+        grid-row: 1 / span 2;
+        width: 42px;
+        height: 42px;
+        margin: 0;
+        border-radius: 13px;
+      }
+
+      .mission-icon svg {
+        width: 21px;
+        height: 21px;
+      }
+
+      .mission b {
+        font-size: 12px;
+      }
+
+      .mission span {
+        margin: 0;
+        font-size: 11px;
+        line-height: 1.4;
+      }
+
+      .transformation-line {
+        gap: 9px;
+        margin-top: 14px;
+        padding: 14px;
+        border-radius: 14px;
+      }
+
+      .transform-node strong {
+        font-size: 13px;
+      }
+
+      .award-spotlight {
+        margin-top: 16px;
+        padding: 20px 13px;
+        border-radius: 20px;
+      }
+
+      .award-header {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-bottom: 17px;
+      }
+
+      .award-header h2 {
+        margin: 6px 0 8px;
+        font-size: 29px;
+        line-height: 1.02;
+      }
+
+      .award-header p {
+        font-size: 13px;
+        line-height: 1.55;
+      }
+
+      .award-total {
+        width: 100%;
+        min-width: 0;
+        padding: 13px 14px;
+        border-radius: 14px;
+        text-align: left;
+      }
+
+      .award-total strong {
+        font-size: 23px;
+      }
+
+      .award-city-grid {
+        grid-template-columns: 1fr;
+        gap: 11px;
+      }
+
+      .award-city {
+        padding: 13px;
+        border-radius: 17px;
+      }
+
+      .award-city-head {
+        align-items: flex-start;
+        gap: 9px;
+        margin-bottom: 12px;
+      }
+
+      .award-city-head strong {
+        font-size: 13px;
+      }
+
+      .city-pool {
+        padding: 6px 8px;
+        font-size: 8px;
+        letter-spacing: .02em;
+      }
+
+      .award-main {
+        grid-template-columns: 54px minmax(0,1fr);
+        grid-template-areas:
+          "icon copy"
+          "money money";
+        gap: 11px;
+        min-height: 0;
+        padding: 14px;
+        border-radius: 16px;
+      }
+
+      .award-orbit {
+        width: 52px;
+        height: 52px;
+      }
+
+      .award-orbit::before,
+      .award-orbit::after {
+        display: none;
+      }
+
+      .award-orbit svg {
+        width: 26px;
+        height: 26px;
+      }
+
+      .award-copy h3 {
+        font-size: 17px;
+        line-height: 1.13;
+        overflow-wrap: anywhere;
+      }
+
+      .award-copy p {
+        font-size: 10px;
+        line-height: 1.45;
+      }
+
+      .award-vietnamese {
+        margin-top: 5px;
+        font-size: 10px !important;
+      }
+
+      .award-money {
+        margin-top: 1px;
+      }
+
+      .award-money strong {
+        font-size: 22px;
+      }
+
+      .award-mini-grid,
+      .award-city.han .award-mini-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        margin-top: 8px;
+      }
+
+      .award-mini {
+        min-height: 0;
+        padding: 12px;
+        border-radius: 14px;
+      }
+
+      .award-mini:hover {
+        transform: none;
+      }
+
+      .award-mini .mini-icon {
+        width: 31px;
+        height: 31px;
+        margin-bottom: 8px;
+      }
+
+      .award-mini strong {
+        font-size: 11px;
+        overflow-wrap: anywhere;
+      }
+
+      .award-mini small {
+        font-size: 10px;
+        line-height: 1.42;
+      }
+
+      .award-mini b {
+        margin-top: 8px;
+        font-size: 14px;
+      }
+
+      .award-note {
+        align-items: flex-start;
+        gap: 9px;
+        margin-top: 11px;
+        padding: 12px;
+        border-radius: 13px;
+        font-size: 11px;
+      }
+
+      .score-framework {
+        margin-top: 16px;
+        padding: 19px 13px;
+        border-radius: 20px;
+      }
+
+      .score-framework::after {
+        right: 8px;
+        bottom: -5px;
+        font-size: 48px;
+      }
+
+      .score-header {
+        gap: 13px;
+        margin-bottom: 17px;
+      }
+
+      .score-header h2 {
+        margin: 6px 0 8px;
+        font-size: 29px;
+        line-height: 1.04;
+      }
+
+      .score-header p {
+        font-size: 13px;
+        line-height: 1.55;
+      }
+
+      .score-total {
+        min-width: 0;
+        padding: 13px 14px;
+        border-radius: 14px;
+      }
+
+      .score-total strong {
+        font-size: 29px;
+      }
+
+      .score-grid {
+        gap: 8px;
+      }
+
+      .score-card {
+        min-height: 0;
+        padding: 14px;
+        border-radius: 14px;
+      }
+
+      .score-card::before {
+        left: 14px;
+        right: 14px;
+      }
+
+      .score-index {
+        width: 31px;
+        height: 31px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+      }
+
+      .score-card h3 {
+        min-height: 0;
+        margin-bottom: 6px;
+        font-size: 14px;
+      }
+
+      .score-card p {
+        font-size: 11px;
+        line-height: 1.45;
+      }
+
+      .score-value {
+        margin-top: 12px;
+      }
+
+      .score-value strong {
+        font-size: 27px;
+      }
+
+      .score-weight {
+        margin-top: 8px;
+      }
+
+      .score-note {
+        align-items: flex-start;
+        padding: 12px;
+        border-radius: 13px;
+      }
+
+      .form-hero {
+        gap: 13px;
+        padding: 19px 15px;
+      }
+
+      .form-hero h2 {
+        font-size: 23px;
+        line-height: 1.18;
+      }
+
+      .form-hero p {
+        font-size: 13px;
+        line-height: 1.52;
+      }
+
+      .console-status {
+        width: 100%;
+        min-width: 0;
+        padding: 11px 12px;
+        border-radius: 12px;
+      }
+
+      form {
+        padding: 17px 14px;
+      }
+
+      .notice {
+        margin-bottom: 14px;
+        padding: 12px 13px;
+        font-size: 12px;
+      }
+
+      .form-section {
+        margin-bottom: 22px;
+        padding-bottom: 22px;
+      }
+
+      .form-section-head {
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 15px;
+      }
+
+      .step-node {
+        width: 33px;
+        height: 33px;
+        border-radius: 10px;
+      }
+
+      .form-section-head h3 {
+        font-size: 17px;
+        line-height: 1.3;
+      }
+
+      .form-section-head p {
+        font-size: 11px;
+        line-height: 1.42;
+      }
+
+      .fields {
+        gap: 14px;
+      }
+
+      .field {
+        gap: 6px;
+      }
+
+      label {
+        font-size: 13px;
+        line-height: 1.38;
+      }
+
+      .helper {
+        font-size: 11px;
+        line-height: 1.42;
+      }
+
+      input,
+      select,
+      textarea {
+        font-size: 16px;
+      }
+
+      input,
+      select {
+        min-height: 52px;
+      }
+
+      textarea {
+        min-height: 124px;
+      }
+
+      .choice-grid,
+      .choice-grid.two {
+        gap: 9px;
+      }
+
+      .choice label {
+        min-height: 91px;
+        padding: 13px;
+        border-radius: 13px;
+      }
+
+      .choice label svg {
+        width: 22px;
+        height: 22px;
+      }
+
+      .choice label b {
+        font-size: 14px;
+      }
+
+      .choice label span {
+        font-size: 11px;
+      }
+
+      .pic-contact-panel {
+        margin-top: 12px;
+        padding: 12px;
+        border-radius: 13px;
+      }
+
+      .pic-contact-card {
+        padding: 11px;
+      }
+
+      .pic-contact-card b {
+        font-size: 12px;
+      }
+
+      .pic-contact-card span {
+        font-size: 11px;
+      }
+
+      .members {
+        gap: 9px;
+      }
+
+      .member-row {
+        gap: 9px;
+        padding: 12px;
+        border-radius: 13px;
+      }
+
+      .add-btn,
+      .remove-btn {
+        min-height: 46px;
+        font-size: 13px;
+      }
+
+      .agreement {
+        gap: 9px;
+        font-size: 12px;
+        line-height: 1.5;
+      }
+
+      .agreement input {
+        width: 20px;
+        height: 20px;
+        flex: 0 0 auto;
+      }
+
+      .integration-note {
+        padding: 12px 13px;
+        font-size: 11px;
+      }
+
+      .action-bar {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        gap: 9px;
+      }
+
+      .btn {
+        width: 100%;
+        min-height: 50px;
+        padding: 0 10px;
+        border-radius: 12px;
+        font-size: 13px;
+      }
+
+      .btn-primary {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        min-width: 0;
+      }
+
+      .btn-secondary {
+        grid-column: 1;
+      }
+
+      .btn-ghost {
+        grid-column: 2;
+      }
+
+      .timeline,
+      .dresscode {
+        padding: 17px 15px;
+      }
+
+      .timeline h3,
+      .dresscode h3 {
+        font-size: 18px;
+      }
+
+      .timeline-row {
+        grid-template-columns: 64px minmax(0,1fr);
+        gap: 10px;
+        padding-bottom: 15px;
+      }
+
+      .timeline-row::before {
+        left: 70px;
+      }
+
+      .timeline-copy::before {
+        left: -14px;
+      }
+
+      .timeline-date {
+        font-size: 10px;
+      }
+
+      .timeline-copy {
+        font-size: 11px;
+      }
+
+      .palette {
+        flex-wrap: wrap;
+      }
+
+      footer {
+        margin-top: 20px;
+        padding: 0 10px;
+        font-size: 11px;
+      }
+
+      .modal {
+        align-items: center;
+        padding:
+          max(12px, env(safe-area-inset-top))
+          12px
+          max(12px, env(safe-area-inset-bottom));
+      }
+
+      .modal-box {
+        max-height: calc(100dvh - 24px);
+        overflow-y: auto;
+        padding: 22px 17px;
+        border-radius: 18px;
+      }
+
+      .modal-icon {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 13px;
+        border-radius: 17px;
+        font-size: 26px;
+      }
+
+      .modal-box h3 {
+        font-size: 22px;
+      }
+
+      .modal-box p {
+        margin-bottom: 17px;
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .modal-box .btn {
+        width: 100%;
+        min-width: 0;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .page {
+        width: calc(100% - 8px);
+      }
+
+      .brand-logo-wrap {
+        padding: 7px 8px;
+      }
+
+      .brand-logo-img {
+        width: 108px;
+      }
+
+      .campaign-logo-chip {
+        min-width: 70px;
+      }
+
+      .campaign-logo-chip img {
+        width: 60px;
+      }
+
+      .hero {
+        padding-left: 13px;
+        padding-right: 13px;
+      }
+
+      .hero-title-3d {
+        font-size: clamp(19px, 7vw, 27px);
+        letter-spacing: -.075em;
+      }
+
+      .hero-tagline {
+        font-size: 12px;
+      }
+
+      .hero-visual {
+        min-height: 264px;
+      }
+
+      .hero-visual svg {
+        max-height: 280px;
+      }
+
+      .float-card {
+        min-width: 102px;
+        padding: 7px 8px;
+      }
+
+      .float-card.three {
+        max-width: 150px;
+      }
+
+      .event-strip {
+        gap: 6px;
+      }
+
+      .metric {
+        padding: 11px;
+      }
+
+      .award-header h2,
+      .score-header h2 {
+        font-size: 26px;
+      }
+
+      .award-city-head {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .city-pool {
+        width: fit-content;
+      }
+
+      .award-main {
+        grid-template-columns: 46px minmax(0,1fr);
+      }
+
+      .award-orbit {
+        width: 44px;
+        height: 44px;
+      }
+
+      .award-orbit svg {
+        width: 22px;
+        height: 22px;
+      }
+
+      .award-copy h3 {
+        font-size: 15px;
+      }
+
+      .action-bar {
+        grid-template-columns: 1fr;
+      }
+
+      .btn-primary,
+      .btn-secondary,
+      .btn-ghost {
+        grid-column: 1;
+      }
+
+      .btn-primary {
+        grid-row: 1;
+      }
+
+      .btn-secondary {
+        grid-row: 2;
+      }
+
+      .btn-ghost {
+        grid-row: 3;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+    }
+
   </style>
 </head>
 <body>
