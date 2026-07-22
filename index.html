@@ -2876,6 +2876,45 @@
       }
     }
 
+
+    /* FIX: vertical transformation arrows on mobile */
+    @media (max-width: 760px) {
+      .transformation-line {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+
+      .transform-arrow {
+        display: none !important;
+      }
+
+      .transform-node {
+        position: relative;
+        width: 100%;
+        padding: 13px 8px;
+        text-align: center;
+      }
+
+      .transform-node:not(:last-child)::after {
+        content: "↓";
+        display: block;
+        width: 100%;
+        margin: 13px auto -4px;
+        color: var(--cyan);
+        font-size: 23px;
+        font-weight: 800;
+        line-height: 1;
+        text-align: center;
+        text-shadow: 0 0 14px rgba(78,227,255,.35);
+      }
+
+      .mission {
+        overflow: hidden;
+      }
+    }
+
   </style>
 </head>
 <body>
